@@ -65,7 +65,6 @@ addresses= [addresses.append(address.getText()) for address in all_address_eleme
 s = Service(CHROME_DRIVER_PATH)
 
 #Prevent chrome from closing
-
 chrome_options = Options()
 chrome_options.add_experimental_option("detach",True)
 driver = webdriver.Chrome(service=s,options=chrome_options)
